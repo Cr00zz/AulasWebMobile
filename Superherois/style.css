@@ -1,0 +1,123 @@
+/*  Variáveis  */
+:root {
+    --body-bg: #f0f0f0;
+    --body-color: #555;
+    --heroe-bg: #ffffff;
+    --link-color: #222;
+    --link-color-hover: #ec5840;
+  }
+  
+  @media screen and (prefers-color-scheme: dark) {
+    :root {
+      --body-bg: #000000;
+      --body-color: #899095;
+      --heroe-bg: #212529;
+      --link-color: #dee2e6;
+      --link-color-hover: #3cc368;
+    }  
+  }
+  
+  /* Fonts */
+  
+  /* Reset */
+  html, body, p, h1 {
+      padding: 0;
+      margin: 0;
+  }
+  
+  /* Estilos básicos */
+  body {
+    display: flex;
+    height: 100dvw;
+    background-color: var(--body-bg);
+    color: var(--body-color);
+    font-family: monospace;
+    justify-content: center;
+  }
+  
+  a {
+    color: var(--link-color);
+  }
+  
+  a:hover {
+    color: var(--link-color-hover);
+  }
+  
+  #heroes {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    width: 100%;
+    padding: 20px;
+  }
+  
+  .heroe {
+    width: 300px;
+    background-color: var(--heroe-bg);
+    border-radius: 10px;
+    margin: 10px;
+  }
+  
+  .heroe_data{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 16px;
+  }
+  
+  .heroe_component {
+    display: flex;
+    justify-content: flex-end;
+    gap: 8px;
+  }
+  
+  .heroe_component_value {
+    width: 150px;
+    height: 10px;
+  }
+  
+  #heroes article img {
+    border-radius: 10px 10px 0 0;
+    width: 100%;
+    max-height: 400px;
+  }
+  
+  #heroes h1 {
+    text-align: center;
+  }
+  
+  .heroe_component_value span {
+    background-color: gray;
+    height: 10px;
+    display: block;
+    margin-top: 5px;
+    border-radius: 5px;
+  }
+
+  .heroInformationTop{
+    height: 80px;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .heroIndex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    flex-shrink: 0;
+    border-radius: 50%;
+    margin-left: 10px;
+    background-color: #000000;
+  }
+  .heroIndex>h2{
+    display: flex;
+    justify-content: center;
+    color: #ffffff;
+  }
+  .heroName{
+    margin-left: 20px;
+  }
